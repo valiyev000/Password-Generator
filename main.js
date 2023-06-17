@@ -7,6 +7,13 @@ const allHistory = document.getElementById("all-history")
 const resetBtn = document.getElementById("reset-btn")
 const clearBtn = document.getElementById("clear-btn")
 
+window.addEventListener("blur",()=>document.title="Hey come back for new password")
+window.addEventListener("focus",()=>{
+    document.title="Here you are;)"
+    setTimeout(() => {
+        document.title="Password Generator"
+    }, 1500);
+})
 
 
 var historyArr = []
