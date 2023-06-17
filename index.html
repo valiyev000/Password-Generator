@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-34</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 id="header-text" class="mb-5 fs-1">Password <br>generator</h1>
+        <div class="grid-row row">
+            <div class="grid-left col-sm-12 col-md-6">
+                <div id="password-display" class="p-3">
+                    <div id="password-text">-SELECT-RANGE-</div>
+                    <div id="reset-btn"><img src="./imgs/refresh-icon.svg" alt="refresh-icon"></div>
+                </div>
+                <button id="copy-btn">Copy Password_</button>
+                <input type="range" name="length-range" id="length-range" min="5" max="20" value="5">
+                <div id="length-display">5</div>
+                <div id="flex-div">
+                    <div class="options">
+                        <input type="checkbox" name="" id="uppercase-checkbox" checked="true">
+                        <label class="input-alter" for="uppercase-checkbox"></label>
+                        <label for="uppercase-checkbox">Uppercase Letters</label>
+                    </div>
+                    <div class="options">
+                        <input type="checkbox" name="" id="lowercase-checkbox">
+                        <label class="input-alter" for="lowercase-checkbox"></label>
+                        <label for="lowercase-checkbox">Lowercase Letters</label>
+                    </div>
+                    <div class="options">
+                        <input type="checkbox" name="" id="number-checkbox">
+                        <label class="input-alter" for="number-checkbox"></label>
+                        <label for="number-checkbox">Numbers</label>
+                    </div>
+                    <div class="options">
+                        <input type="checkbox" name="" id="symbol-checkbox">
+                        <label class="input-alter" for="symbol-checkbox"></label>
+                        <label for="symbol-checkbox">Symbols</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-right col-sm-12 col-md-6 pt-5 pt-md-0">
+                <h6 id="history-header">PASSWORD HISTORY</h6>
+                <div id="all-history">
+                    <!-- <div class="pressClass1">
+                        <span class="pressClass2">${resultPassword}</span>
+                        <img class="pressClass3" src="./imgs/copy-icon.svg" alt="copy-icon">
+                    </div> -->
+                </div>
+                <button id="clear-btn" class="mt-2">Clear History</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
